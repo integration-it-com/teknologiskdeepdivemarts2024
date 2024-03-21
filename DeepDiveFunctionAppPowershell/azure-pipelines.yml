@@ -19,6 +19,7 @@ variables:
 stages:
   - stage: Build
     variables:
+      - group: Common
       - name: workingDirectory
         value: "$(System.DefaultWorkingDirectory)$(directory)"
     displayName: Build stage
