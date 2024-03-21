@@ -6,17 +6,17 @@ using Microsoft.Extensions.Logging;
 
 namespace deepdive
 {
-    public class MyBlobTriggerFunction
+    public class MyManagedIdentityBlobTriggerFunction
     {
         private readonly ILogger<MyBlobTriggerFunction> _logger;
 
-        public MyBlobTriggerFunction(ILogger<MyBlobTriggerFunction> logger)
+        public MyManagedIdentityBlobTriggerFunction(ILogger<MyBlobTriggerFunction> logger)
         {
             _logger = logger;
         }
 
-        // Commented out to disable
-        //[Function(nameof(MyBlobTriggerFunction))]
+
+        [Function(nameof(MyManagedIdentityBlobTriggerFunction))]
         [BlobOutput("output/{rand-guid}.txt", Connection = "BlobStorageConnectionString")]
         public async Task<string> Run(
             [BlobTrigger("input/{name}", Connection = "BlobStorageConnectionString")] Stream stream,
