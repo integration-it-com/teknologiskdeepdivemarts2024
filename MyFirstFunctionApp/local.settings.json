@@ -1,0 +1,8 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "BlobStorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=firststdeepdive;AccountKey=fhCbouEGQrkyu8lkfPn2aaeIf6yrP7ObDxpIOSDtuSAyYGkszn7GV6PRs0xB8EQgAw2bDV4obFfz+AStzbTivw==;EndpointSuffix=core.windows.net"
+  }
+}
