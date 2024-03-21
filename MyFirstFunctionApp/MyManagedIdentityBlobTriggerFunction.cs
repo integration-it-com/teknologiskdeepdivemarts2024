@@ -19,9 +19,9 @@ namespace deepdive
         [Function(nameof(MyManagedIdentityBlobTriggerFunction))]
         [BlobOutput("output/{rand-guid}.txt", Connection = "BlobStorageConnectionString")]
         public async Task<string> Run(
-            [BlobTrigger("input/{name}", Connection = "BlobStorageConnectionString")] Stream stream,
-            [BlobInput("input/config.json", Connection = "BlobStorageConnectionString")] Stream configStream,
-            [BlobInput("input/config2.json", Connection = "BlobStorageConnectionString")] Stream configStream2,
+            [BlobTrigger("upload/{name}", Connection = "BlobStorageConnectionString")] Stream stream,
+            [BlobInput("config/config.json", Connection = "BlobStorageConnectionString")] Stream configStream,
+            [BlobInput("config/config2.json", Connection = "BlobStorageConnectionString")] Stream configStream2,
             string name)
         {
             var config = JsonSerializer.Deserialize<AzureFunctionAppConfiguration>(configStream);
