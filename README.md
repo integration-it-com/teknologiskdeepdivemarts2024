@@ -12,6 +12,8 @@ Mikkel Norsgaard Thomsen <mnt@integration-it.com>
 
 [AZ204](https://github.com/xemmel/az204)
 
+[DTI_AIS](https://github.com/xemmel/dti_ais)
+
 ## Tools
 
 [Microsoft webpage](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local)
