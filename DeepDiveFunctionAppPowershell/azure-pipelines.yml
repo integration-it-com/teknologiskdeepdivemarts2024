@@ -7,6 +7,9 @@ trigger:
   - master
 
 variables:
+  # Azure Resource Manager connection created during pipeline creation
+  azureSubscription: "c3eaa70a-d039-43d7-8ed9-6d3eb97d4080"
+
   # Function app name
   functionAppName: "firstfuncpowershell"
 
@@ -68,7 +71,7 @@ stages:
                 - task: AzureFunctionApp@1
                   displayName: "Azure functions app deploy"
                   inputs:
-                    azureSubscription: "$(sc.connection)"
+                    azureSubscription: "$(azureSubscription)"
                     appType: functionApp
                     appName: $(functionAppName)
                     package: "$(Pipeline.Workspace)/drop/$(Build.BuildId).zip"
