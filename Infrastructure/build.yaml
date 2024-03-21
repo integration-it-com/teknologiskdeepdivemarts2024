@@ -1,0 +1,44 @@
+trigger:
+  branches:
+    include:
+      - none
+  paths:
+    include:
+      - "Infrastructure/**"
+
+### Set up following variables in the Common library group
+#
+# appName: Name of the Function app. Be careful of max 24 storage account naming limit
+# location: westeurope / swedencentral etc.
+# sc.connection: The name of the service connection principal from Azure DevOps
+# storageAccountConnectionStringName: The Connection string name in the Blob Trigger Function
+
+variables:
+  - group: Common
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+  - stage: Build
+    jobs:
+      - job: Job_1
+        displayName: "Build and publish artifact"
+        steps:
+          - checkout: self
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: "$(Build.Repository.LocalPath)"
+              Contents: Infrastructure/templates/*'
+              TargetFolder: "$(Build.Repository.LocalPath)/Infrastructure/templates"
+          - task: PublishPipelineArtifact@1
+            inputs:
+              targetPath: "$(Build.Repository.LocalPath)/Infrastructure/templates"
+              artifact: templates
+              publishLocation: "pipeline"
+
+  - template: deploy.yaml
+    parameters:
+      EnvironmentPostFix: test
+      ServiceConnection: $(sc.connection)
+      Location: $(location)
+      AppName: $(appName)

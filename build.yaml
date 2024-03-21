@@ -1,0 +1,44 @@
+trigger:
+  branches:
+    include:
+      - master
+  paths:
+    include:
+      - "MyFirstFunctionApp/**"
+
+variables:
+  - name: webAppPath
+    value: "**/deepdive/*.csproj"
+  - name: buildConfiguration
+    value: Release
+  - group: Common
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+  - stage: Build
+    jobs:
+      - job: Job_1
+        displayName: "Build and publish code"
+        steps:
+          - checkout: self
+          - task: DotNetCoreCLI@2
+            displayName: "Publish/Build Web App - $(buildConfiguration)"
+            inputs:
+              command: "publish"
+              projects: $(webAppPath)
+              publishWebProjects: false
+              arguments: "-o $(Build.ArtifactStagingDirectory)/WebApp --configuration $(buildConfiguration)"
+
+          - task: PublishPipelineArtifact@1
+            displayName: "Publish Web App to Pipeline"
+            inputs:
+              targetPath: "$(Build.ArtifactStagingDirectory)/WebApp"
+              artifact: WebApp
+              publishLocation: "pipeline"
+
+  - template: deploy.yaml
+    parameters:
+      ServiceConnection: $(sc.connection)
+      AppName: $(appName)
+      Location: $(location)

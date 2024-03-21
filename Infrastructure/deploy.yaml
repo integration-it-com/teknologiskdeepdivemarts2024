@@ -1,0 +1,35 @@
+parameters:
+  - name: EnvironmentPostFix
+    type: string
+    default: development
+  - name: ServiceConnection
+    type: string
+  - name: Location
+    type: string
+  - name: AppName
+    type: string
+
+stages:
+  - stage: ${{ parameters.EnvironmentPostFix }}Release
+    variables:
+      - name: resourceGroup
+        value: ${{ parameters.AppName }}-${{ parameters.EnvironmentPostFix }}-rg
+    displayName: Release to ${{ parameters.EnvironmentPostFix }}
+    jobs:
+      - deployment: ${{ parameters.EnvironmentPostFix }}
+        displayName: Release to ${{ parameters.EnvironmentPostFix }}
+        environment: ${{ parameters.EnvironmentPostFix }}
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - task: AzureResourceManagerTemplateDeployment@3
+                  inputs:
+                    connectedServiceName: ${{ parameters.ServiceConnection }}
+                    location: ${{ parameters.Location }}
+                    resourceGroupName: ${{ variables.resourceGroup }}
+                    csmFile: "$(Pipeline.Workspace)/templates/infrastructure.bicep"
+                    overrideParameters: >
+                      -appName ${{ parameters.AppName }}
+                      -env ${{ parameters.EnvironmentPostFix}}
+                      -storageAccountConnectionStringName $(storageAccountConnectionStringName)
