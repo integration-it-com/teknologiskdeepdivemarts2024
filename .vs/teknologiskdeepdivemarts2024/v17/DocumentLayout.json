@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\Repos\\teknologisk\\teknologiskdeepdivemarts2024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CED194A6-9195-4E6C-AA8B-252DE35CF3EF}|dockerfunctionapp\\dockerfunctionapp.csproj|C:\\Repos\\teknologisk\\teknologiskdeepdivemarts2024\\dockerfunctionapp\\dockerfunctionapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{B1F24D87-F812-4D20-B76A-3851913368A9}|durablefunctionapp\\durablefunctionapp.csproj|c:\\repos\\teknologisk\\teknologiskdeepdivemarts2024\\durablefunctionapp\\durablefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1F24D87-F812-4D20-B76A-3851913368A9}|durablefunctionapp\\durablefunctionapp.csproj|solutionrelative:durablefunctionapp\\durablefunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1F24D87-F812-4D20-B76A-3851913368A9}|durablefunctionapp\\durablefunctionapp.csproj|c:\\repos\\teknologisk\\teknologiskdeepdivemarts2024\\durablefunctionapp\\durablefunctionapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B1F24D87-F812-4D20-B76A-3851913368A9}|durablefunctionapp\\durablefunctionapp.csproj|solutionrelative:durablefunctionapp\\durablefunctionapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CED194A6-9195-4E6C-AA8B-252DE35CF3EF}|dockerfunctionapp\\dockerfunctionapp.csproj|c:\\repos\\teknologisk\\teknologiskdeepdivemarts2024\\dockerfunctionapp\\dockerfunctionapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{CED194A6-9195-4E6C-AA8B-252DE35CF3EF}|dockerfunctionapp\\dockerfunctionapp.csproj|solutionrelative:dockerfunctionapp\\dockerfunctionapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CED194A6-9195-4E6C-AA8B-252DE35CF3EF}|dockerfunctionapp\\dockerfunctionapp.csproj|c:\\repos\\teknologisk\\teknologiskdeepdivemarts2024\\dockerfunctionapp\\function1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CED194A6-9195-4E6C-AA8B-252DE35CF3EF}|dockerfunctionapp\\dockerfunctionapp.csproj|C:\\Repos\\teknologisk\\teknologiskdeepdivemarts2024\\dockerfunctionapp\\function1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CED194A6-9195-4E6C-AA8B-252DE35CF3EF}|dockerfunctionapp\\dockerfunctionapp.csproj|solutionrelative:dockerfunctionapp\\function1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -41,7 +49,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 20,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -109,7 +117,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "durablefunctionapp",
+              "DocumentMoniker": "C:\\Repos\\teknologisk\\teknologiskdeepdivemarts2024\\durablefunctionapp\\durablefunctionapp.csproj",
+              "RelativeDocumentMoniker": "durablefunctionapp\\durablefunctionapp.csproj",
+              "ToolTip": "C:\\Repos\\teknologisk\\teknologiskdeepdivemarts2024\\durablefunctionapp\\durablefunctionapp.csproj",
+              "RelativeToolTip": "durablefunctionapp\\durablefunctionapp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-22T12:51:25.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DurableFunction.cs",
+              "DocumentMoniker": "C:\\Repos\\teknologisk\\teknologiskdeepdivemarts2024\\durablefunctionapp\\DurableFunction.cs",
+              "RelativeDocumentMoniker": "durablefunctionapp\\DurableFunction.cs",
+              "ToolTip": "C:\\Repos\\teknologisk\\teknologiskdeepdivemarts2024\\durablefunctionapp\\DurableFunction.cs",
+              "RelativeToolTip": "durablefunctionapp\\DurableFunction.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAwCEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T12:52:22.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Repos\\teknologisk\\teknologiskdeepdivemarts2024\\dockerfunctionapp\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "dockerfunctionapp\\Properties\\launchSettings.json",
@@ -121,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "host.json",
               "DocumentMoniker": "C:\\Repos\\teknologisk\\teknologiskdeepdivemarts2024\\dockerfunctionapp\\host.json",
               "RelativeDocumentMoniker": "dockerfunctionapp\\host.json",
@@ -133,18 +167,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "dockerfunctionapp",
               "DocumentMoniker": "C:\\Repos\\teknologisk\\teknologiskdeepdivemarts2024\\dockerfunctionapp\\dockerfunctionapp.csproj",
               "RelativeDocumentMoniker": "dockerfunctionapp\\dockerfunctionapp.csproj",
               "ToolTip": "C:\\Repos\\teknologisk\\teknologiskdeepdivemarts2024\\dockerfunctionapp\\dockerfunctionapp.csproj",
               "RelativeToolTip": "dockerfunctionapp\\dockerfunctionapp.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-22T11:35:31.104Z"
+              "WhenOpened": "2024-03-22T11:35:31.104Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Repos\\teknologisk\\teknologiskdeepdivemarts2024\\dockerfunctionapp\\Program.cs",
               "RelativeDocumentMoniker": "dockerfunctionapp\\Program.cs",
@@ -156,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "dockerfunctionapp.csproj",
               "DocumentMoniker": "C:\\Repos\\teknologisk\\teknologiskdeepdivemarts2024\\dockerfunctionapp\\dockerfunctionapp.csproj",
               "RelativeDocumentMoniker": "dockerfunctionapp\\dockerfunctionapp.csproj",
@@ -169,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Container.targets",
               "DocumentMoniker": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\build\\Container.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\build\\Container.targets",
@@ -181,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Repos\\teknologisk\\teknologiskdeepdivemarts2024\\dockerfunctionapp\\Dockerfile",
               "RelativeDocumentMoniker": "dockerfunctionapp\\Dockerfile",
@@ -193,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Function1.cs",
               "DocumentMoniker": "C:\\Repos\\teknologisk\\teknologiskdeepdivemarts2024\\dockerfunctionapp\\Function1.cs",
               "RelativeDocumentMoniker": "dockerfunctionapp\\Function1.cs",
@@ -201,8 +236,7 @@
               "RelativeToolTip": "dockerfunctionapp\\Function1.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAAwBgAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T11:32:13.046Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T11:32:13.046Z"
             }
           ]
         }

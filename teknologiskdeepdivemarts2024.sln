@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "deepdive", "MyFirstFunctionApp\deepdive.csproj", "{D61DB059-C96E-4304-A30B-4A0F2AAD62B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dockerfunctionapp", "dockerfunctionapp\dockerfunctionapp.csproj", "{CED194A6-9195-4E6C-AA8B-252DE35CF3EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dockerfunctionapp", "dockerfunctionapp\dockerfunctionapp.csproj", "{CED194A6-9195-4E6C-AA8B-252DE35CF3EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "durablefunctionapp", "durablefunctionapp\durablefunctionapp.csproj", "{B1F24D87-F812-4D20-B76A-3851913368A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CED194A6-9195-4E6C-AA8B-252DE35CF3EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CED194A6-9195-4E6C-AA8B-252DE35CF3EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CED194A6-9195-4E6C-AA8B-252DE35CF3EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1F24D87-F812-4D20-B76A-3851913368A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F24D87-F812-4D20-B76A-3851913368A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F24D87-F812-4D20-B76A-3851913368A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F24D87-F812-4D20-B76A-3851913368A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
