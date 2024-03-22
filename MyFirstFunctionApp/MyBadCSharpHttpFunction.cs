@@ -19,6 +19,7 @@ namespace deepdive
         {
             _logger.LogInformation("C# HTTP trigger function processed a request. This will not work!!!!");
 
+            _logger.LogCritical
             throw new Exception("The Function App crashed");
         }
     }

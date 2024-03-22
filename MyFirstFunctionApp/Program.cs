@@ -1,7 +1,13 @@
 using Microsoft.Extensions.Hosting;
 
-var host = new HostBuilder()
-    .ConfigureFunctionsWorkerDefaults()
-    .Build();
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        var host = new HostBuilder()
+            .ConfigureFunctionsWorkerDefaults()
+            .Build();
 
-host.Run();
+        host.Run();
+    }
+}
