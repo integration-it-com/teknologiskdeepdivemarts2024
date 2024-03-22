@@ -22,7 +22,7 @@ namespace deepdive
             var response = req.CreateResponse(HttpStatusCode.OK);
             response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
 
-            response.WriteString("Velkommen til Teknologisk Kursus!!!!!! I deep dive");
+            response.WriteString("Velkommen til Teknologisk Kursus!!!!!! I deep dive, nu med pipelines");
 
             return response;
         }
