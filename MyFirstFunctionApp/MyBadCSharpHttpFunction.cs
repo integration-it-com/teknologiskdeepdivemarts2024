@@ -18,8 +18,20 @@ namespace deepdive
         public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequestData req)
         {
             _logger.LogInformation("C# HTTP trigger function processed a request. This will not work!!!!");
+            try
+            {
+                throw new Exception("The Function App crashed");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogInformation("Error was ignored");
+            }
+            var response = req.CreateResponse(HttpStatusCode.OK);
+            response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
 
-            throw new Exception("The Function App crashed");
+            response.WriteString("Velkommen til Teknologisk Kursus!!!!!! I deep dive, nu med pipelines igen igen");
+
+            return response;
         }
     }
 }
