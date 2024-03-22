@@ -22,7 +22,7 @@ namespace DeepDiveFunctionAppContainer
             var response = req.CreateResponse(HttpStatusCode.OK);
             response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
 
-            response.WriteString("Welcome to Containerized Azure Functions!");
+            response.WriteString("Welcome to Updated Containerized Azure Functions!");
 
             return response;
         }
