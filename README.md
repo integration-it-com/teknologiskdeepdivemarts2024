@@ -143,7 +143,7 @@ Example: Blob Trigger required roles
 
 **WARNING: DO NOT USE BLOB TRIGGER IN PRODUCTION. IT IS NOT RELIABLE FOR PRODUCTION.**
 
-See warning in above link.
+See warning in above link. Instead see example in code how to use a Storage Account Queue trigger.
 
 ### Exercisees
 
