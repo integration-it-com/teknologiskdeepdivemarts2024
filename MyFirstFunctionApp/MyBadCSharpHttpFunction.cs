@@ -18,8 +18,6 @@ namespace deepdive
         public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequestData req)
         {
             _logger.LogInformation("C# HTTP trigger function processed a request. This will not work!!!!");
-
-            _logger.LogCritical
             throw new Exception("The Function App crashed");
         }
     }
