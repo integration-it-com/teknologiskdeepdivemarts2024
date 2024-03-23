@@ -16,6 +16,7 @@ Mikkel Norsgaard Thomsen <mnt@integration-it.com>
 
 ## Tools
 
+[Chocolately](https://chocolatey.org/)
 [Microsoft webpage](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local)
 
 ## Azure App Services
@@ -48,6 +49,10 @@ Dedicated App Service plan. Use which ever App Service plan is needed. VNET. No 
 [Pricing](https://azure.microsoft.com/en-gb/pricing/details/functions/)
 
 A storage account is also created.
+
+### Network (Premium / Dedicated plans)
+
+[Networking](https://learn.microsoft.com/en-us/azure/azure-functions/functions-networking-options?tabs=azure-portal)
 
 ### Which one to use?
 
@@ -82,7 +87,7 @@ Core Tools CLI command:
 
 Triggers are used to run a Function. Must have 1.
 
-Bindings can be input or output and are used to connect to other resources. Are provided as parameters in the Function.
+Bindings can be input or output and are used to connect to other resources. Are provided as parameters in the Function. You can have multiple Input or Output bindings on a Function.
 
 [Triggers and Bindings](https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings)
 
